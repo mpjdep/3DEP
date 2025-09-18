@@ -1,5 +1,4 @@
-How to use the scripts:
-
+How to use the script:
 <b>semiAutofit_MPJ_v#.m</b>
 
 A) line 18 needs to be updated with the average radius of the cells.
