@@ -1,6 +1,7 @@
 % Semiautomated fitting of the single-shell CM model to data collected by
 % the DEPtech 3DEP electrophysiology reader. Modified from the adamstn2
-% script (github.com/adamstn2/Core-shell-spherical-DEP-polarization-model)
+% script (github.com/adamstn2/Core-shell-spherical-DEP-polarization-model, 
+% https://doi.org/10.1002/elps.202300202)
 % to avoid the csv input and adopt the MPH-group variable conventions.
 %
 % Author: MP Johnson
@@ -240,4 +241,5 @@ function [err, RealFcm1] = residual(x1,y1,Evac,Emed,Qmed,Rout,t,x0)
     RealFcm1 = depf(Evac,Emed,x0(1),x0(2),x0(3),x0(4),Qmed,Rout,t,x1);
     err = x0(5)*sum(abs(RealFcm1-y1./x0(5)));
 end
+
 
